@@ -13,12 +13,10 @@ namespace MvcApplication1.Controllers
     {
         private GameDBCtxt db = new GameDBCtxt();
 
-        // GET: /Gry/Details/5
-        public ActionResult Wszystkie(string Find)
+        public ActionResult Wszystkie()
         {
             var games = from i in db.Games
                         select i;
-            //jeśli coś przesłano, to wyszukaj po tym
             ViewBag.GamList = games.ToList();
             return View();
         }
@@ -28,7 +26,6 @@ namespace MvcApplication1.Controllers
         {
            var games = from i in db.Games
                       select i;
-           //jeśli coś przesłano, to wyszukaj po tym
            if (!String.IsNullOrEmpty(Find))
            {
                 games = from i in db.Games
