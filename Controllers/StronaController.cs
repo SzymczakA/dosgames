@@ -17,14 +17,14 @@ namespace MvcApplication1.Controllers
 
         public ActionResult Programy()
         {
-            ViewBag.Message = "DOS Games description page.";
+            ViewBag.Message = "DOS Games Programy.";
 
             return View();
         }
 
         public ActionResult Kontakt()
         {
-            ViewBag.Message = "DOS Games contact page.";
+            ViewBag.Message = "DOS Games Kontakt.";
 
             return View();
         }

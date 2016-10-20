@@ -11,7 +11,6 @@ namespace MvcApplication1.Controllers
 {
     public class KategorieController : Controller
     {
-        // GET: /Kategorie/
 
         private GameDBCtxt db = new GameDBCtxt();
         public ActionResult Wszystkie()
