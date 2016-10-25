@@ -40,13 +40,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2015 18:08:35</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>11/09/2015 18:08:59</publishTime>
+      <publishTime>07/08/2013 16:15:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.WebPages.OAuth.dll">
-      <publishTime>11/09/2015 18:09:07</publishTime>
+      <publishTime>07/09/2013 12:05:10</publishTime>
     </File>
     <File Include="bin/MvcApplication1.dll">
-      <publishTime>10/13/2016 10:04:07</publishTime>
+      <publishTime>10/24/2016 20:24:19</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>11/09/2015 18:08:59</publishTime>
@@ -58,16 +58,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/11/2016 00:45:51</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>11/09/2015 18:09:03</publishTime>
+      <publishTime>05/07/2013 14:09:16</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>11/09/2015 18:09:01</publishTime>
+      <publishTime>07/09/2013 12:05:10</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>11/09/2015 18:09:04</publishTime>
+      <publishTime>05/07/2013 14:09:16</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>11/09/2015 18:09:05</publishTime>
+      <publishTime>05/07/2013 14:09:18</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
       <publishTime>11/09/2015 18:09:02</publishTime>
@@ -76,25 +76,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2015 18:09:06</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>11/09/2015 18:09:00</publishTime>
+      <publishTime>07/09/2013 12:05:12</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>11/09/2015 18:09:01</publishTime>
+      <publishTime>07/09/2013 12:05:12</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>11/09/2015 18:09:01</publishTime>
+      <publishTime>07/09/2013 12:05:12</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>11/09/2015 18:09:01</publishTime>
+      <publishTime>07/09/2013 12:05:12</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>11/09/2015 18:09:12</publishTime>
     </File>
     <File Include="bin/WebMatrix.Data.dll">
-      <publishTime>11/09/2015 18:09:06</publishTime>
+      <publishTime>07/09/2013 12:05:10</publishTime>
     </File>
     <File Include="bin/WebMatrix.WebData.dll">
-      <publishTime>11/09/2015 18:09:08</publishTime>
+      <publishTime>07/09/2013 12:05:12</publishTime>
     </File>
     <File Include="Content/PagedList.css">
       <publishTime>04/11/2016 00:45:52</publishTime>
@@ -1420,7 +1420,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2015 18:07:48</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/10/2016 09:07:50</publishTime>
+      <publishTime>10/18/2016 14:06:57</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>11/09/2015 18:07:48</publishTime>
@@ -1444,7 +1444,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2015 18:07:48</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/13/2016 11:42:17</publishTime>
+      <publishTime>10/24/2016 20:24:25</publishTime>
     </File>
   </ItemGroup>
 </Project>
