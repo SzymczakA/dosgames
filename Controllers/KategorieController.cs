@@ -15,17 +15,15 @@ namespace MvcApplication1.Controllers
         private GameDBCtxt db = new GameDBCtxt();
         public ActionResult Wszystkie()
         {
-            List<Category> CatList = db.Categories.ToList();
-            ViewData["Cats"] = CatList;                
-            var Gam5 = from i in db.Games
-                          select i;
-            List<Game>[] CatGam = new List<Game>[20];
-            for (int i = 0; i < CatList.Count; i++) {
-                Category tmp = CatList.ElementAt(i);
-                List<Game> GamList = Gam5.Where(p => p.CategoryID.Equals(tmp.CategoryID)).ToList();
-                CatGam[i+1] = GamList.GetRange(0, GamList.Count < 5 ? GamList.Count : 5);
-            }
-            ViewData["ViewCatGam"] = CatGam;
+            List<Game>[] top5Games = new List<Game>[20];
+            var groupedGames = db.Games
+                .GroupBy(s => s.CategoryID);
+            groupedGames.ToList().ForEach(s => {
+                top5Games[s.Key] = s.Take(5).ToList();
+            });
+
+            ViewData["Cats"] = db.Categories.ToList();                
+            ViewData["ViewCatGam"] = top5Games;
                 return View();       
         }
 

@@ -5,7 +5,7 @@
 
 <h2>Wszystkie</h2>
 <br>
-       <div class="gamList"> 
+<div class="gamList"> 
 @foreach (var item in ViewBag.GamList)
 {
             <div onclick="location.href='@Url.Action("Pobierz", new { id = item.Id })'">
@@ -17,5 +17,5 @@
                 Rozmiar: @item.Size MB
             </div>
 }
-      </div>
+</div>
 

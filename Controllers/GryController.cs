@@ -15,8 +15,7 @@ namespace MvcApplication1.Controllers
 
         public ActionResult Wszystkie()
         {
-            var games = from i in db.Games
-                        select i;
+            var games = db.Games;
             ViewBag.GamList = games.ToList();
             return View();
         }
