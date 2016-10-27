@@ -17,9 +17,12 @@ namespace MvcApplication1.Controllers
         {
             List<Game>[] top5Games = new List<Game>[20];
             var groupedGames = db.Games
-                .GroupBy(s => s.CategoryID);
-            groupedGames.ToList().ForEach(s => {
-                top5Games[s.Key] = s.Take(5).ToList();
+                .GroupBy(s => s.CategoryID)
+                .Select (g => g.Take (5));
+
+            groupedGames.ToList().ForEach(s =>
+            {
+                top5Games[s.First().CategoryID] = s.ToList();
             });
 
             ViewData["Cats"] = db.Categories.ToList();                
