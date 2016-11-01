@@ -25,7 +25,10 @@ namespace MvcApplication1.Controllers
                 top5Games[s.First().CategoryID] = s.ToList();
             });
 
-            ViewData["Cats"] = db.Categories.ToList();                
+            ViewData["Cats"] = db.Categories
+                .OrderBy(s => s.CategoryPL)
+                .ToList();
+                
             ViewData["ViewCatGam"] = top5Games;
                 return View();       
         }
