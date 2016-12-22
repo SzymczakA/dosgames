@@ -7,39 +7,41 @@
 
 @foreach (var itemArray in ViewBag.Cats)
 {
-<table>
-    <tr>
-     <td>
+    <table>
+        <tr>
+            <td>
                 <div class="content-wrapper">
                     <div class="float-left">
-                         <h2 onclick="location.href='@Url.Action( "Kategoria", "Kategorie", new { id=itemArray.CategoryID })'">@itemArray.CategoryPL</h2>
+                        <h2 onclick="location.href='@Url.Action("Kategoria", "Kategorie", new { id = itemArray.CategoryID })'">@itemArray.CategoryPL</h2>
                     </div>
                     <div class="float-right">
-                         <section id="cats"> 
-                            <a href="@Url.Action( "Kategoria", "Kategorie", new { id=itemArray.CategoryID })">Pokaż wszystkie</a>
-                         </section>  
+                        <section id="cats">
+                            <a href="@Url.Action("Kategoria", "Kategorie", new { id = itemArray.CategoryID })">Pokaż wszystkie</a>
+                        </section>
                     </div>
                 </div>
-     </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="gamList">
-@foreach (var item in ViewBag.ViewCatGam[itemArray.CategoryID])
-{
-                <div onclick="location.href='@Url.Action( "Pobierz", "Gry", new { id=item.Id })'">
-                    <img style="height: 160px; width: 160px;" src="../Images/@item.Image" /><br>
-                    <b>@item.FullName</b> <br>           
-                    <span class="star-rating">
-                        <i style="width: 90%;"> </i>
-                    </span><br>             
-                    Rozmiar: @item.Size MB
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="gamList">
+                    @foreach (var item in ViewBag.ViewCatGam[itemArray.CategoryID])
+                    {
+                        <div onclick="location.href='@Url.Action("Pobierz", "Gry", new { id = item.Id })'">
+                            <img style="height: 160px; width: 160px;" src="../Images/@item.Image" /><br>
+                            <b>@item.FullName</b>
+                            <br>
+                            <span class="star-rating">
+                                <i style="width: 90%;"></i>
+                            </span>
+                            <br>
+                            Rozmiar: @item.Size MB
+                        </div>
+                    }
                 </div>
-}
-            </div>
-        </td>
-    </tr>
-</table>
+            </td>
+        </tr>
+    </table>
 }
 Contact GitHub API Training Shop Blog About
 © 2016 GitHub, Inc. Terms Privacy Security Status Help

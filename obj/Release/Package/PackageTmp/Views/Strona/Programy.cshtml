@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Polecane programy";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+<article>
+        <div class="gamList">
+                <div onclick="location.href='@Url.Action( "Programy", "Strona")'">
+                    <img style="height: 160px; width: 160px;" src="../Images/ImageDOSBox.jpg" /><br>
+                    <b>DOSBox</b> <br>           
+                    <span class="star-rating"> 
+                        <i style="width: 90%;"> </i>
+                    </span><br>             
+                    Rozmiar: 5 MB
+                </div>
+                <div onclick="location.href='@Url.Action( "Programy", "Strona")'">
+                    <img style="height: 160px; width: 160px;" src="../Images/ImageDosGames.jpg" /><br>
+                    <b>DOSGames Starter</b> <br>           
+                    <span class="star-rating"> 
+                        <i style="width: 90%;"> </i>
+                    </span><br>             
+                    Rozmiar: 5 MB
+                </div>
+    </div>
+</article>
+
+<aside>
+    <h3>Porady</h3>
+    Dla użytkownikw nowszych systemów Windows, począwszy od Visty, potrzebny będzie przede wszystkim program "DOSBox" który umożliwia emulację środowiska DOS. Przydatny może być również program "DOSGames Starter" stworzony dla tych którzy chcą uruchomić gry DOS-owe bez znajomości poleceń tego systemu.
+</aside>

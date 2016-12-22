@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - DOS Games</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">@Html.ActionLink("DOS Games", "Index", "Strona")</p>
+                    <br>   
+                     <ul id="menu">
+                            <li>@Html.ActionLink("Strona Główna", "Index", "Strona")</li>
+                            <li>@Html.ActionLink("Gry", "Wszystkie", "Gry")</li>
+                            <li>@Html.ActionLink("Kategorie", "Wszystkie", "Kategorie")</li>
+                            <li>@Html.ActionLink("Programy", "Programy", "Strona")</li>
+                            <li>@Html.ActionLink("Kontakt", "Kontakt", "Strona")</li>
+
+                        </ul>
+                    <br>
+                </div>
+                <div class="float-right">
+                    <br>
+                    <section id="login">
+                        @Html.Partial("_LoginPartial")
+                    </section>
+                    <nav>
+
+<br>
+<form action="/Gry/Szukaj" method="post">
+        <div id="Finder"><input id="Find" name="Find" type="text" value="" /> <input id="FindBut" type="submit" value="" /></div>
+</form>
+                                           </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - DOS Games</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

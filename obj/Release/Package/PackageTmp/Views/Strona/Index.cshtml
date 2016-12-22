@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "DOS Games";
+}
+
+
+<article>
+    <hgroup class="title">
+        <h1>Witamy w @ViewBag.Title.</h1>
+    </hgroup>
+    <br>
+        Zapraszamy do podróży w czasie do czasów, w których na komputerach osobistych królował system operacyjny DOS, a gry komputerowe były tworzone właśnie dla tego systemu. Jednakże zanim wybierzemy się w tę niezwykłą podróż musimy pamiętać o tym że nowsze systemy operacyjne Windows, począwszy od Visty, nie pozwalają na uruchamianie aplikacji przeznaczonych dla DOS. Na szczęście nie jest to sytuacja bez wyjścia a w naszą podróż możemy wybrać się dzięki programom znajdującym się w zakładce "Programy" w menu. 
+    <br>
+        Potrzebny będzie przede wszystkim program "DOSBox" który umożliwia emulację środowiska DOS. Przydatny może być również program "DOSGames Starter" stworzony dla tych którzy chcą uruchomić gry DOS-owe bez znajomości poleceń tego systemu.
+</article>
+
+<aside>
+    <h3>Polecane programy</h3>
+        <div class="gamList">
+                <div onclick="location.href='@Url.Action( "Programy", "Strona")'">
+                    <img style="height: 160px; width: 160px;" src="../Images/ImageDOSBox.jpg" /><br>
+                    <b>DOSBox</b> <br>           
+                    <span class="star-rating"> 
+                        <i style="width: 90%;"> </i>
+                    </span><br>             
+                    Rozmiar: 5 MB
+                </div>
+    </div>
+</aside>

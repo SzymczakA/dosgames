@@ -18,7 +18,7 @@ namespace MvcApplication1.Controllers
             List<Game>[] top5Games = new List<Game>[20];
             var groupedGames = db.Games
                 .GroupBy(s => s.CategoryID)
-                .Select (g => g.Take (5));
+                .Select(g => g.Take(5));
 
             groupedGames.ToList().ForEach(s =>
             {
@@ -28,18 +28,18 @@ namespace MvcApplication1.Controllers
             ViewData["Cats"] = db.Categories
                 .OrderBy(s => s.CategoryPL)
                 .ToList();
-                
+
             ViewData["ViewCatGam"] = top5Games;
-                return View();       
+            return View();
         }
 
         public ActionResult Kategoria(int id = 0)
         {
-            Category CatList = db.Categories.Find(id);;
+            Category CatList = db.Categories.Find(id); ;
             ViewData["Cat"] = CatList;
             var CatGam = from i in db.Games
-                      where i.CategoryID.Equals(id)
-                      select i;
+                         where i.CategoryID.Equals(id)
+                         select i;
             ViewData["ViewCatGam"] = CatGam;
             return View();
         }

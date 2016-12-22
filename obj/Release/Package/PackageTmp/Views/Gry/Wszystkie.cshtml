@@ -1,0 +1,21 @@
+﻿@model IEnumerable<MvcApplication1.Models.Game>
+@{
+    ViewBag.Title = "Wszystkie";
+}
+
+<h2>Wszystkie</h2>
+<br>
+<div class="gamList"> 
+@foreach (var item in ViewBag.GamList)
+{
+            <div onclick="location.href='@Url.Action("Pobierz", new { id = item.Id })'">
+                <img style="height: 160px; width: 160px;" src="../Images/@item.Image" /><br>
+                <b>@item.FullName</b> <br>           
+                <span class="star-rating">
+                    <i style="width: 90%;"> </i>
+                </span><br>             
+                Rozmiar: @item.Size MB
+            </div>
+}
+</div>
+

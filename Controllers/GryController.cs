@@ -23,16 +23,16 @@ namespace MvcApplication1.Controllers
         [HttpPost]
         public ActionResult Szukaj(string Find)
         {
-           var games = from i in db.Games
-                      select i;
-           if (!String.IsNullOrEmpty(Find))
-           {
+            var games = from i in db.Games
+                        select i;
+            if (!String.IsNullOrEmpty(Find))
+            {
                 games = from i in db.Games
-                     where i.FullName.Contains(Find)
-                     select i;
-           }
-           ViewBag.GamList = games.ToList();
-           return View();
+                        where i.FullName.Contains(Find)
+                        select i;
+            }
+            ViewBag.GamList = games.ToList();
+            return View();
         }
 
         public ActionResult Pobierz(int id = 0)
@@ -48,12 +48,12 @@ namespace MvcApplication1.Controllers
             LinkList.Add("http://asnet.cba.pl/?gra=" + game.Name);
             LinkList.Add(game.Link);
             db.SaveChanges();
-            
+
             ViewBag.GamLink = LinkList;
             return View(game);
         }
 
-        
+
 
         protected override void Dispose(bool disposing)
         {
