@@ -36,7 +36,8 @@ D:\MVC\DosGames\bin\DotNetOpenAuth.OAuth.xml
 D:\MVC\DosGames\bin\DotNetOpenAuth.OpenId.xml
 D:\MVC\DosGames\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 D:\MVC\DosGames\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
-D:\MVC\DosGames\obj\Debug\MvcApplication1.Migrations.Popularnosc.resources
-D:\MVC\DosGames\obj\Debug\MvcApplication1.csproj.GenerateResource.Cache
 D:\MVC\DosGames\obj\Debug\MvcApplication1.dll
 D:\MVC\DosGames\obj\Debug\MvcApplication1.pdb
+D:\MVC\DosGames\obj\Debug\MvcApplication1.Migrations.InitialCreate.resources
+D:\MVC\DosGames\obj\Debug\MvcApplication1.csproj.GenerateResource.Cache
+D:\MVC\DosGames\obj\Debug\MvcApplication1.Migrations.prog.resources

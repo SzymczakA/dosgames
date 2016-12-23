@@ -178,15 +178,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610101929242_Popularnosc.cs" />
-    <Compile Include="Migrations\201610101929242_Popularnosc.Designer.cs">
-      <DependentUpon>201610101929242_Popularnosc.cs</DependentUpon>
+    <Compile Include="Migrations\201612212242294_InitialCreate.cs" />
+    <Compile Include="Migrations\201612212242294_InitialCreate.Designer.cs">
+      <DependentUpon>201612212242294_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612231026198_prog.cs" />
+    <Compile Include="Migrations\201612231026198_prog.Designer.cs">
+      <DependentUpon>201612231026198_prog.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Maszyna.cs" />
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -312,8 +316,11 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610101929242_Popularnosc.resx">
-      <DependentUpon>201610101929242_Popularnosc.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201612212242294_InitialCreate.resx">
+      <DependentUpon>201612212242294_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612231026198_prog.resx">
+      <DependentUpon>201612231026198_prog.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

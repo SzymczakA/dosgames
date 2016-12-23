@@ -8,26 +8,30 @@
     <section class="featured">
         <div class="content-wrapper" style="height: 348px; padding-right: 0px">
             <div class="gamDetail-left">
-            <img style="height: 160px; width: 160px; float:left" src="../Images/@Html.DisplayFor(model => model.Image)" />
-            <h1>@Html.DisplayFor(model => model.FullName)<br>
-                <span class="star-rating">
-                    <i style="width: 90%;"> </i>
-                </span>
-            </h1>           
-            <br><p>Rozmiar: @Html.DisplayFor(model => model.Size) MB</p><br><br>
+                <img style="height: 160px; width: 160px; float:left" src="../Images/@Html.DisplayFor(model => model.Image)" />
+                <h1>@Html.DisplayFor(model => model.FullName)<br>
+                    <span class="star-rating">
+                        <i style="width: 90%;"></i>
+                    </span>
+                </h1>
+                <br>
+                <p>Rozmiar: @Html.DisplayFor(model => model.Size) MB</p>
+                <br>
+                <br>
                 @Html.DisplayFor(model => model.Descript)
                 <div onclick="location.href='#links'">Pobierz <b>↓</b></div>
-      </div>        
-      <div class="gamDetail-right">
-          Starting MS-DOS...<br>
-          <br>
-Microsoft(R) MS-DOS(R) Version 6.22<br>
-            (C)Copyright Microsoft Corp 1981-1994.<br>
-          <br>
-C:\>cd @Html.DisplayFor(model => model.Name)<br><br>
-C:\@Html.DisplayFor(model => model.Name)>@Html.DisplayFor(model => model.Name)_
+            </div>
+            <div class="gamDetail-right">
+                Starting MS-DOS...<br>
+                <br>
+                Microsoft(R) MS-DOS(R) Version 6.22<br>
+                (C)Copyright Microsoft Corp 1981-1994.<br>
+                <br>
+                C:\>cd @Html.DisplayFor(model => model.Name)<br>
+                <br>
+                C:\@Html.DisplayFor(model => model.Name)>@Html.DisplayFor(model => model.Name)_
                     
-              </div>              
+            </div>
         </div>
     </section>
 }
@@ -47,11 +51,11 @@ C:\@Html.DisplayFor(model => model.Name)>@Html.DisplayFor(model => model.Name)_
         <h5>Przeciągnij archiwum z grą do okna programu DOSGames Starter</h5>
         Alternatywnie można podać lokalizację pliku w menu programu.
     </li>
-</ol>    
+</ol>
 <section id="links">
-        <h5>Pobierz</h5>
-        @foreach (var item in ViewBag.GamLink)
-        {
-            <a href="@item"> @Html.DisplayFor(model => model.FullName)</a><br>
-        }
+    <h5>Pobierz</h5>
+    @foreach (var item in ViewBag.GamLink)
+    {
+        <a href="@item">@Html.DisplayFor(model => model.FullName)</a><br>
+    }
 </section>

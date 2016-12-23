@@ -5,13 +5,13 @@ namespace MvcApplication1.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class Popularnosc : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Popularnosc));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201610101929242_Popularnosc"; }
+            get { return "201612212242294_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

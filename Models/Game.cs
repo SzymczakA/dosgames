@@ -26,8 +26,6 @@ namespace MvcApplication1.Models
     {
         public DbSet<Game> Games { get; set; }
         public DbSet<Category> Categories { get; set; }
-
-
-
+        public DbSet<Program> Programs { get; set; }
     }
 }
