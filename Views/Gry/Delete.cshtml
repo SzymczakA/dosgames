@@ -11,58 +11,60 @@
     <legend>Game</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Name)
+        @Html.DisplayNameFor(model => model.Name)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Name)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.FullName)
+        @Html.DisplayNameFor(model => model.FullName)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.FullName)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Category)
+        @Html.DisplayNameFor(model => model.Category)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Category)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Size)
+        @Html.DisplayNameFor(model => model.Size)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Size)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Descript)
+        @Html.DisplayNameFor(model => model.Descript)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.e)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Year)
+        @Html.DisplayNameFor(model => model.Year)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Year)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Link)
+        @Html.DisplayNameFor(model => model.Link)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Link)
     </div>
 </fieldset>
-@using (Html.BeginForm()) {
+@using (Html.BeginForm())
+{
     @Html.AntiForgeryToken()
     <p>
-        <input type="submit" value="Delete" /> |
+        <input type="submit" value="Delete" />
+        |
         @Html.ActionLink("Back to List", "Index")
     </p>
 }
